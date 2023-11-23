@@ -1,11 +1,10 @@
-<!DOCTYPE HTML PUBLIC" -//W3C//DTD HTML 4.01//EN""http://www.w3.org/TR/html4/strict.dtd">
-<html lang="zh-Hant-TW">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <title>環境執法地理資訊平台</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1,
-            maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <meta property="og:locale" content="zh_TW" />
     <meta property="og:type" content="website" />
@@ -49,27 +48,27 @@
         <ul>
 
             <li>
-                <a href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="地圖切換">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="地圖切換" class="a1">
                     <img src="img/a1.svg" alt="a1">
                 </a>
             </li>
             <li>
-                <a href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="圖層套疊">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="圖層套疊" class="a2">
                     <img src="img/a2.svg" alt="a2">
                 </a>
             </li>
             <li>
-                <a href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="定位">
+                <a data-bs-toggle="tooltip" data-bs-placement="right" title="定位" class="a3">
                     <img src="img/a3.svg" alt="a3">
                 </a>
             </li>
             <li>
-                <a href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="事業查詢">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="事業查詢" class="a4">
                     <img src="img/a4.svg" alt="定位">
                 </a>
             </li>
             <li>
-                <a href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="查處資料">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="查處資料" class="a5">
                     <img src="img/a5.svg" alt="查處資料">
                 </a>
             </li>
@@ -81,7 +80,581 @@
     </nav>
 
     <section class="main">
+        <section class="form-signin FuZuo" id="a1" style="display: none;">
 
+
+            <h2 class="FuZuo_t">地圖切換
+                <img src="img/close.svg" alt="" class="close_btn"></h2>
+
+            <ul class="first_cheack">
+                <li>
+                    <input type="radio" class="form-check-input" id="inlineRadio1" name="map_change" checked>
+                    <label class="form-check-label" for="inlineRadio1">臺灣通用電子地圖
+
+                    </label>
+                </li>
+                <li>
+                    <input type="radio" class="form-check-input" id="inlineRadio2" name="map_change">
+                    <label class="form-check-label" for="inlineRadio2">臺灣通用電子地圖(灰階)
+
+                    </label>
+                </li>
+                <li>
+                    <input type="radio" class="form-check-input" id="inlineRadio3" name="map_change">
+                    <label class="form-check-label" for="inlineRadio3">航照圖
+
+
+                    </label>
+                </li>
+                <li>
+                    <input type="radio" class="form-check-input" id="inlineRadio4" name="map_change">
+                    <label class="form-check-label" for="inlineRadio4">直轄市、縣市界線
+
+
+                    </label>
+                </li>
+                <li>
+                    <input type="radio" class="form-check-input" id="inlineRadio5" name="map_change">
+                    <label class="form-check-label" for="inlineRadio5">鄉鎮市區界線
+
+
+
+                    </label>
+                </li>
+            </ul>
+            <div class="mb-4 ">
+                <button type="submit" class="btn clear">清除
+                </button>
+                <button type="submit" class="btn registration">確定
+
+                </button>
+            </div>
+        </section>
+        <section class="form-signin FuZuo" id="a2" style="display: none;">
+
+
+            <h2 class="FuZuo_t">圖層套疊
+                <img src="img/close.svg" alt="" class="close_btn"></h2>
+
+            <ul class="num3">
+                <li>
+                    <a class="pro_detail_title" href="javascript:void(0);">
+                        <h3>許可位置 </h2>
+                    </a>
+                    <ul class="second_cheack">
+                        <li>
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">第二層選單
+                        </label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                            <label class="form-check-label" for="exampleCheck2">第二層選單
+                        </label>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="pro_detail_title" href="javascript:void(0);">
+                        <h3>掩埋場及焚化爐 </h2>
+                    </a>
+                    <ul class="second_cheack">
+                        <li>
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">第二層選單
+                        </label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                            <label class="form-check-label" for="exampleCheck2">第二層選單
+                        </label>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="pro_detail_title" href="javascript:void(0);">
+                        <h3>環境保護管制區 </h2>
+                    </a>
+                    <ul class="second_cheack">
+                        <li>
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">第二層選單
+                        </label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                            <label class="form-check-label" for="exampleCheck2">第二層選單
+                        </label>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="pro_detail_title" href="javascript:void(0);">
+                        <h3>列管廢棄物棄置場址
+                            </h2>
+                    </a>
+                    <ul class="second_cheack">
+                        <li>
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">第二層選單
+                        </label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                            <label class="form-check-label" for="exampleCheck2">第二層選單
+                        </label>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="pro_detail_title active" href="javascript:void(0);">
+                        <h3>地下水及土壤污染
+
+                            </h2>
+                    </a>
+                    <ul class="second_cheack" style="display: block;">
+                        <li>
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">土壤及地下水污染場址位置圖
+
+                        </label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                            <label class="form-check-label" for="exampleCheck2">土壤污染管制區範圍圖
+                        </label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">地下水污染管制區範圍圖
+
+
+                        </label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                            <label class="form-check-label" for="exampleCheck2">地下水場置性監測井位置圖
+                        </label>
+                        </li>
+                    </ul>
+                </li>
+                </li>
+                <li>
+                    <a class="pro_detail_title" href="javascript:void(0);">
+                        <h3>環境監測
+                            </h2>
+                    </a>
+                    <ul class="second_cheack">
+                        <li>
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">第二層選單
+                    </label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                            <label class="form-check-label" for="exampleCheck2">第二層選單
+                    </label>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="pro_detail_title" href="javascript:void(0);">
+                        <h3>公害陳情
+                            </h2>
+                    </a>
+                    <ul class="second_cheack">
+                        <li>
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">第二層選單
+                    </label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                            <label class="form-check-label" for="exampleCheck2">第二層選單
+                    </label>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="pro_detail_title" href="javascript:void(0);">
+                        <h3>自然環境
+                            </h2>
+                    </a>
+                    <ul class="second_cheack">
+                        <li>
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">第二層選單
+                    </label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                            <label class="form-check-label" for="exampleCheck2">第二層選單
+                    </label>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="pro_detail_title" href="javascript:void(0);">
+                        <h3>其他
+
+                            </h2>
+                    </a>
+                    <ul class="second_cheack">
+                        <li>
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">第二層選單
+                    </label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                            <label class="form-check-label" for="exampleCheck2">第二層選單
+                    </label>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="mb-4 ">
+                <button type="submit" class="btn clear">清除
+                </button>
+                <button type="submit" class="btn registration">定位
+
+                </button>
+            </div>
+        </section>
+        <section class="form-signin FuZuo" id="a3" style="display: block;">
+            <h2 class="FuZuo_t">定位 <img src="img/close.svg" alt="" class="close_btn"></h2>
+            <div id="pr-moretag-con-tp5" class="pr-moretag-con tabRoot">
+                <nav class="pr-moretag-sw ">
+                    <a tabindex="0" class="tabButton section">行政區 </a>
+                    <a tabindex="0" class="tabButton">地址 </a>
+                    <a tabindex="0" class="tabButton">地號</a>
+                    <a tabindex="0" class="tabButton">坐標</a>
+                </nav>
+                <div class="tabArea" style="display: none;">
+                    <p>注意事項：本項查詢僅限列管事業
+                    </p>
+                    <div class="mb-2 ">
+                        <label for="exampleInputPassword1 " class="form-label ">縣市 </label>
+                        <select class="form-select " aria-label="Default select example ">
+                                <option selected>臺北市</option>
+                                <option value="1 ">臺北市</option>
+                                <option value="2 ">臺北市 </option>
+                                <option value="3 ">臺北市 </option>
+                              </select>
+                    </div>
+                    <div class="mb-2 ">
+                        <label for="exampleInputPassword1 " class="form-label ">鄉鎮市區
+
+                        </label>
+                        <select class="form-select " aria-label="Default select example ">
+                                <option selected>萬華區 </option>
+                              </select>
+                    </div>
+
+                    <div class="mb-4 " style="margin-top: 20px;">
+                        <button type="submit" class="btn clear">清除
+                        </button>
+                        <button type="submit" class="btn registration">定位
+        
+                        </button>
+                    </div>
+                </div>
+                <div class="tabArea" style="display: none;">
+                    <form>
+
+
+                        <div class="mb-4">
+
+                            <p>完整地址請至少包含縣市、路(街)名、門牌號碼等。</p>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="exampleInputPassword1" class="form-label">地址
+                                    
+                                </label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="請輸入完整地址,例臺北市中華路一段83號
+                                    ">
+                        </div>
+                        <div class="mb-4 ">
+                            <button type="submit" class="btn clear">清除
+                            </button>
+                            <button type="submit" class="btn registration">確定
+            
+                            </button>
+                        </div>
+                        <div class="mb-4">
+                            <h3>坐標
+
+                            </h3>
+                            <label for="exampleInputPassword1" class="form-label">WGS84坐標
+        
+                                    
+                                </label>
+                            <div class="dark_copy">121.50777 , 25.03855
+                                <button class="copy_btn" data-bs-toggle="tooltip" data-bs-placement="right" title="複製"><img src="img/copy.svg" alt=""></button>
+                            </div>
+                            <label for="exampleInputPassword1" class="form-label">TWD97坐標
+        
+        
+                                    
+                                </label>
+                            <div class="dark_copy">301238.731, 2770143.536
+
+                                <button class="copy_btn" data-bs-toggle="tooltip" data-bs-placement="right" title="複製"><img src="img/copy.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="tabArea" style="display: none;">
+                    <p>資料來源：環境部監資司
+
+                    </p>
+                    <div class="mb-2 ">
+                        <label for="exampleInputPassword1 " class="form-label ">縣市 </label>
+                        <select class="form-select " aria-label="Default select example ">
+                                <option selected>臺北市</option>
+                                <option value="1 ">臺北市</option>
+                                <option value="2 ">臺北市 </option>
+                                <option value="3 ">臺北市 </option>
+                              </select>
+                    </div>
+                    <div class="mb-2 ">
+                        <label for="exampleInputPassword1 " class="form-label ">鄉鎮市區
+
+                        </label>
+                        <select class="form-select " aria-label="Default select example ">
+                                <option selected>萬華區 </option>
+                              </select>
+                    </div>
+                    <div class="mb-2 ">
+                        <label for="exampleInputPassword1 " class="form-label ">段名
+
+
+                        </label>
+                        <select class="form-select " aria-label="Default select example ">
+                                <option selected>漢中段一小段
+                                </option>
+                              </select>
+                    </div>
+                    <div class="mb-2 ">
+                        <label for="exampleInputPassword1 " class="form-label ">地號
+
+
+
+                        </label>
+                        <select class="form-select " aria-label="Default select example ">
+                                <option selected>00000006
+
+                                </option>
+                              </select>
+                    </div>
+                    <div class="mb-4 " style="margin-top: 20px;">
+                        <button type="submit" class="btn clear">清除
+                        </button>
+                        <button type="submit" class="btn registration">定位
+        
+                        </button>
+                    </div>
+                </div>
+                <div class="tabArea">
+                    <h3>WGS84坐標</h3>
+                    <div class="mb-2">
+                        <label for="exampleInputEmail1" class="form-label">經度</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="例：121.50777">
+                    </div>
+                    <div class="mb-2">
+                        <label for="exampleInputEmail1" class="form-label">緯度
+                        </label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="例：25.03855">
+                    </div>
+                    <div class="mb-2">
+                        <button type="submit" class="btn clear">清除
+                        </button>
+                        <button type="submit" class="btn registration">定位
+                        </button>
+                    </div>
+                    <h3>TWD97坐標
+                    </h3>
+                    <div class="mb-2">
+                        <label for="exampleInputEmail1" class="form-label">X
+                        </label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="例：301238.731">
+                    </div>
+                    <div class="mb-2">
+                        <label for="exampleInputEmail1" class="form-label">Y
+                        </label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="例：2770143.536">
+                    </div>
+                    <div class="mb-2">
+                        <button type="submit" class="btn clear">清除
+                        </button>
+                        <button type="submit" class="btn registration">定位
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </section>
+        <section class="form-signin FuZuo" id="a4" style="display: none;">
+
+
+            <form>
+                <h2 class="FuZuo_t">列管事業查詢
+                    <img src="img/close.svg" alt="" class="close_btn"></h2>
+                <p class="Precautions"> 注意事項：本項查詢僅限列管事業</p>
+
+
+                <div class="mb-2">
+                    <label for="exampleInputPassword1" class="form-label">管制編號
+
+                            
+                        </label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="例:A3800000 ">
+                </div>
+                <div class="mb-2">
+                    <label for="exampleInputPassword1" class="form-label">事業名稱
+
+
+                            
+                        </label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="請輸入事業名稱 ">
+                </div>
+                <div class="mb-2">
+                    <button type="submit" class="btn clear">清除
+                    </button>
+                    <button type="submit" class="btn registration">查詢
+                    </button>
+                </div>
+                <div class="mb-2">
+                    <p class="Precautions"> 符合結果
+                    </p>
+
+                    <button data-bs-toggle="tooltip" data-bs-placement="right" aria-label="查看" data-bs-original-title="查看" type="submit" class="btn login Environmental">環資國際有限公司
+
+                    </button>
+
+                </div>
+            </form>
+
+        </section>
+        <section class="form-signin FuZuo" style="display: none;" id="FuZuo2">
+
+
+            <form>
+                <h2 class="FuZuo_t">列管資訊
+
+                    <img src="img/close.svg" alt="" class="close_btn"></h2>
+
+                <ul class="infor_txt">
+                    <li><span class="title">管制編號
+                        </span><span class="content">A1234567
+                        </span></li>
+
+                    <li><span class="title">事業名稱
+                    </span><span class="content">A1234567公司</span></li>
+                    <li><span class="title">實際廠(場)址
+                    </span><span class="content">臺北市中正區10段10號
+                    </span></li>
+                    <li><span class="title">行業別名稱</span><span class="content">請選擇</span></li>
+                    <li><span class="title">工業區
+                    </span><span class="content">非屬工業區類
+                    </span></li>
+                    <li><span class="title">行業別
+                    </span><span class="content">其他資訊服務業
+                    </span></li>
+                    <li><span class="title">列管類別</span>
+                        <span class="content">
+                         <ul class="three_cheack">
+                        <li>
+                            <input type="checkbox" class="form-check-input" id="three_cheack1">
+                            <label class="form-check-label" for="three_cheack1">空
+                    </label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="form-check-input" id="three_cheack2">
+                            <label class="form-check-label" for="three_cheack2">水
+                    </label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="form-check-input" id="three_cheack3">
+                            <label class="form-check-label" for="three_cheack3">廢
+                    </label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="form-check-input" id="three_cheack4">
+                            <label class="form-check-label" for="three_cheack4">毒
+                    </label>
+                        </li>
+                    </ul>
+                    </span>
+                    </li>
+                    <li><span class="title">土水場址代碼</span><span class="content">A01010</span></li>
+                    <li><span class="title">5年內稽查次數</span><span class="content">38 </span></li>
+                    <li><span class="title">5年內裁處次數 </span><span class="content">
+                        <a href=""  data-bs-toggle="tooltip" data-bs-placement="right" title="下載明細" class="download_txt">37</a>
+                </span></li>
+                    <li><span class="title">WGS84坐標</span><span class="content">121.50777 , 25.03855</span></li>
+                    <li><span class="title">TWD97坐標</span><span class="content">301238.731, 2770143.536 </span></li>
+                </ul>
+
+
+            </form>
+
+        </section>
+        <section class="form-signin FuZuo" id="a5">
+
+
+            <form>
+                <h2 class="FuZuo_t ">查處資料
+
+                    <img src="img/close.svg " alt=" " class="close_btn "></h2>
+                <p class="Precautions "> 注意事項：本項查詢僅限列管事業
+                </p>
+
+
+                <div class="mb-2 ">
+                    <label for="exampleInputPassword1 " class="form-label ">縣市 </label>
+                    <select class="form-select " aria-label="Default select example ">
+                            <option selected>臺北市</option>
+                            <option value="1 ">臺北市</option>
+                            <option value="2 ">臺北市 </option>
+                            <option value="3 ">臺北市 </option>
+                          </select>
+                </div>
+                <div class="mb-2 ">
+                    <label for="exampleInputPassword1 " class="form-label ">行政區
+                    </label>
+                    <select class="form-select " aria-label="Default select example ">
+                            <option selected>萬華區</option>
+                            <option selected>萬華區</option>
+                            <option selected>萬華區</option>
+                            <option selected>萬華區</option>
+                          </select>
+                </div>
+                <div class="mb-2 ">
+                    <label for="exampleInputPassword1 " class="form-label ">查詢類別
+
+                    </label>
+                    <select class="form-select " aria-label="Default select example ">
+                            <option selected>未選擇</option>
+                            <option selected>列管後無稽查紀錄</option>
+                            <option selected>限改待查列管事業</option>
+                            <option selected>曾有情節重大紀錄</option>
+                            <option selected>曾有停工停業紀錄
+                            </option>
+                          </select>
+                </div>
+                <div class="mb-2 ">
+                    <button type="submit " class="btn clear ">清除
+                    </button>
+                    <button type="submit " class="btn registration ">查詢
+                    </button>
+                </div>
+            </form>
+
+        </section>
         <ul class="map_infor">
 
             <li>
@@ -116,15 +689,14 @@
             </li>
 
         </ul>
-
-
-        <img src="img/old_map.jpg" alt="map">
+        <img src="img/map.jpg " alt="map " class="main ">
     </section>
-    <script src="js/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
+    <script src="js/jquery.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js " integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js " integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+ " crossorigin="anonymous "></script>
+    <script src="js/main.js "></script>
+
 
 </body>
 
