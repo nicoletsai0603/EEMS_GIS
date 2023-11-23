@@ -1,0 +1,73 @@
+@media screen and (max-width: 1438px) {
+    .map img {
+        width: 80%;
+    }
+    .information {
+        width: calc(100vw - 100px);
+    }
+    .information_select {
+        margin-bottom: 10px;
+    }
+    .map {
+        width: calc(100vw - 100px);
+        margin-top: 0;
+        max-width: unset;
+    }
+    .main {
+        position: unset;
+    }
+}
+
+@media screen and (max-width: 1283px) {
+    h5.number {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 1127px) {
+    h2.cause {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .lightbox {
+        width: calc(50% - 10px);
+    }
+    .infor200,
+    .infor200left {
+        width: 50%;
+    }
+    .infoboxa,
+    .infoboxb,
+    .infoboxc {
+        border-right: none;
+        border-bottom: #FFFFFF 1px solid;
+    }
+    .companyinfo li {
+        flex-grow: 0;
+        flex-basis: 100%;
+        margin-bottom: 12px;
+    }
+    .tubetype li {
+        list-style: none;
+        padding: 0 15px 0 0;
+        flex-basis: 40px;
+        flex-shrink: 1;
+    }
+    .errorarea {
+        width: 100%;
+    }
+    .chartspace {
+        width: 100%;
+        padding: 20px 10px;
+    }
+}
+
+@media screen and (max-width: 803px) {
+    h1 a.logo {
+        width: 600px;
+        background-size: contain;
+    }
+}

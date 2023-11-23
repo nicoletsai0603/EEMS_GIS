@@ -1,0 +1,900 @@
+        @charset "utf-8";
+        /* CSS Document */
+        
+        i {
+            font-style: normal;
+        }
+        
+        @import url("http://fonts.googleapis.com/earlyaccess/notosanstc.css");
+        @import url("reset.css");
+        body {
+            color: #fff;
+            font-family: Verdana, Noto Sans CJK TC;
+            font-size: 1.3rem;
+            background-size: cover;
+            background: #2599C2 url(../img/main_bg.jpg) 0 0/cover no-repeat;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        a {
+            color: #666;
+            font-size: 1.3rem;
+            text-decoration: none;
+        }
+        
+        .fix_content {
+            display: flex;
+        }
+        
+        ul {
+            padding: 0;
+            margin: 0;
+        }
+        
+        ul li {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        header {
+            min-height: 70px;
+            width: 100%;
+            background: linear-gradient(to right, #2598C0 0%, #5DCCE7 100%);
+            padding: 0 26px;
+            position: relative;
+            z-index: 99;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-size: cover;
+            flex-wrap: wrap;
+            top: 0;
+            margin-left: 0;
+        }
+        /*mobile選單*/
+        
+        #mobile_menu_labIcon {
+            display: block;
+            position: fixed;
+            right: 10px;
+            top: 18px;
+            z-index: 1000;
+        }
+        
+        #menu_mobile {
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+            font-size: 1em;
+            position: relative;
+            display: block;
+        }
+        
+        .hamburger {
+            cursor: pointer;
+            display: block;
+        }
+        
+        .hamburger2 {
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+            display: block;
+        }
+        
+        .hamburger2 .line {
+            width: 30px;
+            height: 2px;
+            background-color: #d09623;
+            display: block;
+            margin: 4px auto;
+            -webkit-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            border-radius: 50px;
+        }
+        
+        .hamburger2:hover {
+            cursor: pointer;
+        }
+        
+        .hamburger .line {
+            width: 30px;
+            height: 3px;
+            background-color: #fff;
+            display: block;
+            margin: 4px auto;
+            -webkit-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            border-radius: 50px;
+        }
+        
+        .hamburger:hover {
+            cursor: pointer;
+        }
+        
+        #hamburger-1.is-active .line:nth-child(2) {
+            opacity: 0;
+        }
+        
+        #hamburger-1.is-active .line:nth-child(1) {
+            transform: translateY(3px) rotate(45deg);
+        }
+        
+        #hamburger-1.is-active .line:nth-child(3) {
+            transform: translateY(-11px) rotate(-45deg);
+        }
+        
+        .portfolio-filter.isotope-filter.pull-center {
+            width: calc(100% - 80px);
+            height: 100%;
+            position: fixed;
+            left: calc(-100% + 80px);
+            top: 0;
+            z-index: 9999;
+            background: #fff;
+            margin-bottom: 0;
+            margin-top: 0;
+            transition: 0.3s;
+        }
+        
+        .btn.SearchBtn {
+            position: absolute;
+            right: 10px;
+        }
+        
+        .portfolio-filter.isotope-filter.pull-center.on {
+            left: 0;
+            transition: 0.3s;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+        /* 上方選單 */
+        
+        .submenu {
+            width: 80px;
+            position: fixed;
+            /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#2598c0+0,5fcee8+100&0.8+0,0.8+100 */
+            background: linear-gradient(to bottom, rgba(37, 152, 192, 1) 0%, rgba(95, 206, 232, 0.8) 100%);
+            /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            text-align: center;
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            z-index: 2;
+            top: 0;
+            overflow-y: auto;
+            display: flex;
+            height: 100vh;
+        }
+        
+        .submenu.on {
+            top: -100vh;
+        }
+        
+        .submenu ul {
+            width: 60px;
+            clear: both;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 70px;
+        }
+        
+        .submenu li {
+            padding: 8px 0;
+            list-style-type: none;
+        }
+        
+        .submenu li a {
+            padding: 0;
+            color: #fff;
+            background-color: rgba(250, 250, 250, 0.25);
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        
+        .submenu li a:hover,
+        .submenu li a.active {
+            background-color: rgba(0, 0, 0, 0.25);
+            transition: all 0.3s;
+        }
+        
+        .tooltip-inner {
+            font-size: 18px;
+        }
+        
+        .clear_setting {
+            margin-top: auto;
+            margin-bottom: 20px;
+        }
+        /**/
+        
+        .main {
+            width: 100vw;
+            display: flex;
+            flex-wrap: wrap;
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            overflow: hidden;
+            height: 100vh;
+        }
+        
+        h1 {
+            font-size: 0em;
+            display: flex;
+            margin-bottom: 0;
+            align-items: center;
+        }
+        
+        h1 a.logo {
+            display: inline-block;
+            background: url(../img/logo.svg) 0 0 no-repeat;
+            width: 300px;
+            height: 37px;
+            text-indent: -9999px;
+            background-size: cover;
+            align-items: center;
+            margin-left: 40px;
+        }
+        
+        header ul {
+            display: flex;
+            justify-content: flex-end;
+            font-size: 1rem;
+            line-height: 1.5;
+            column-gap: 15px;
+            color: #fff;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 0;
+        }
+        
+        header ul li {
+            display: flex;
+            align-items: center;
+        }
+        
+        header ul li a {
+            color: #fff;
+            font-size: 1rem;
+        }
+        
+        header ul li a:hover {
+            color: #fff700;
+            font-size: 1rem;
+        }
+        
+        .information_select {
+            margin-left: auto;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            margin: 0;
+            font-weight: bold;
+        }
+        
+        .map_infor {
+            position: absolute;
+            width: 55px;
+            right: 10px;
+            top: 100px;
+            display: grid;
+            gap: 10px;
+            place-content: center;
+            justify-content: center;
+            place-self: center;
+            padding: 10px;
+            z-index: 1;
+            border-radius: 10px;
+            /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#2598c0+0,5fcee8+100&0.8+0,0.8+100 */
+            background: linear-gradient(to bottom, rgba(37, 152, 192, 0.7) 0%, rgba(95, 206, 232, 0.7) 100%);
+            /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        }
+        
+        .map_infor li {
+            display: grid;
+            place-content: center;
+        }
+        
+        .map_infor li a {
+            position: relative;
+        }
+        
+        .select {
+            background-color: #fff;
+            border: #000 1px solid;
+            padding: 5px 10px;
+            min-height: 44px;
+            margin: 5px 0;
+            min-width: 140px;
+        }
+        
+        .btn_bg {
+            min-height: 44px;
+            color: #fff;
+            padding: 5px 10px;
+            margin-left: 15px;
+            margin: 5px 0;
+            min-width: 140px;
+            background: linear-gradient(to bottom, rgb(0, 143, 151) 0%, rgb(0, 116, 189) 100%);
+            border-radius: 10px;
+            font-size: 1.5rem;
+            border: none;
+        }
+        
+        .information_border.infor2 {
+            padding: 10px 10px 0 10px;
+            margin-top: 10px;
+        }
+        
+        .area_b {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: space-between;
+        }
+        
+        .area {
+            padding: 20px 10px;
+            width: calc(50% - 6px);
+            border: #546882 1px solid;
+            border-radius: 5px;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+            margin-bottom: 10px;
+            background: linear-gradient(to bottom, #2F3844, #45556B);
+        }
+        
+        h4.cause3 {
+            font-size: 1.875rem;
+            text-align: center;
+            width: 100%;
+        }
+        
+        .area2 {
+            display: inline-flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 15px;
+        }
+        
+        h5.number {
+            font-weight: 900;
+            font-size: 3.875rem;
+            line-height: 3.875rem;
+            background: linear-gradient(to top, #FFCC00, #FBDD3B);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            margin-bottom: 0;
+            text-align: center;
+        }
+        
+        h6.cause3 {
+            font-size: 1.563rem;
+            font-weight: 400;
+        }
+        
+        h6.number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3.125rem;
+            line-height: 3.125rem;
+            background: linear-gradient(to right, #00CCFF, #00FFF7);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            margin-bottom: 0;
+        }
+        
+        .CLEARFLOAT {
+            clear: both;
+        }
+        
+        .map {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 80px;
+            width: 34%;
+            max-width: 546px;
+            padding-top: 60px;
+            background: linear-gradient(-45deg, #1f2630 0%, #2b3745 100%);
+            font-size: 1.125rem;
+        }
+        
+        .map img {
+            max-width: 400px;
+            width: 100%;
+        }
+        /*第二頁*/
+        
+        .google_map {
+            width: calc(100vw - 100px);
+            margin-left: 100px;
+            position: relative;
+            height: calc(100vh - 80px);
+            margin-top: 80px;
+        }
+        
+        .company_title {
+            font-size: 0.95rem;
+            color: #00CDD7;
+            margin-bottom: 5px;
+            font-size: 1.25rem;
+        }
+        
+        .company {
+            font-size: 0.9rem;
+            padding: 0;
+            margin-bottom: 0;
+        }
+        
+        .company li {
+            margin-bottom: 2px;
+            display: inline-flex;
+            width: 100%;
+        }
+        
+        .company li .title {
+            width: 160px;
+            display: block;
+        }
+        
+        .company li .content {
+            width: 204px;
+        }
+        
+        .btn_bg.detail {
+            float: right;
+            font-size: 0.85rem;
+            min-width: 88px;
+            min-height: 34px;
+            border-radius: 5px;
+            padding: 0;
+            font-weight: 300;
+        }
+        /*最右側文字資料*/
+        
+        .infor200 {
+            background: linear-gradient(-45deg, rgba(31, 38, 48, 0.7) 0%, rgba(44, 55, 69, 0.7) 100%);
+            width: 400px;
+            height: calc(100vh - 80px);
+            position: absolute;
+            z-index: 2;
+            padding: 10px;
+            right: 0;
+            top: 0px;
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto
+        }
+        
+        .infor_txt {
+            font-size: 0.938rem;
+            padding: 0;
+            margin-bottom: 10px;
+        }
+        
+        .infor_txt li {
+            display: inline-flex;
+            width: 100%;
+        }
+        
+        .infor_txt li .title {
+            width: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #2598C0;
+            color: #fff;
+            padding: 15px 10px;
+            border-bottom: #fff 1px solid;
+        }
+        
+        .infor_txt li .content {
+            width: calc(100% - 120px);
+            background-color: #fff;
+            color: #000;
+            display: flex;
+            align-items: center;
+            padding-left: 10px;
+            padding: 15px 10px;
+        }
+        
+        .btn_bg.gray {
+            margin-right: 20px;
+            background: linear-gradient(to top, rgb(112, 112, 112) 0%, rgb(145, 145, 145) 100%);
+        }
+        
+        .companyinfo h3 {
+            font-size: 1.25rem;
+            background: linear-gradient(to right, #00CCFF, #00FFF7);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            margin: 0;
+        }
+        
+        .companyinfo {
+            width: 100%;
+            font-size: 1.125rem;
+            line-height: 1.3;
+            padding-bottom: 20px;
+        }
+        
+        .companyinfo ul {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .companyinfo li {
+            list-style: none;
+            flex-grow: 1;
+            flex-shrink: 0;
+            padding-left: 15px;
+        }
+        /*login*/
+        
+        .form-label {
+            margin: 0;
+            width: 100%;
+            color: #2598C0;
+            font-size: 1.4rem;
+            margin: 5px 0;
+        }
+        
+        .talk {
+            font-size: 1rem;
+        }
+        
+        .form-signin {
+            max-width: 500px;
+            margin: 120px auto;
+            background-color: rgba(250, 250, 250, 0.9);
+        }
+        
+        .login_b {
+            padding: 1.5em;
+        }
+        
+        .border_title {
+            text-align: center;
+            padding: 0.5em 2.5rem;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            background: linear-gradient(to right, #2598C0 0%, #5DCCE7 100%);
+        }
+        
+        .btn {
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px;
+        }
+        
+        .login {
+            width: 100%;
+            background: transparent;
+            border: #007387 2px solid;
+            color: #007387;
+            margin-bottom: 15px;
+        }
+        
+        .login:hover {
+            background: #007387;
+            color: #fff;
+            background: linear-gradient(to right, #2598C0 0%, #5DCCE7 100%);
+        }
+        
+        .back_home {
+            color: #fff;
+            width: 100%;
+            background: linear-gradient(to right, #2598C0 0%, #5DCCE7 100%);
+        }
+        
+        .back_home:hover {
+            background: #2598C0;
+            color: #fff;
+        }
+        
+        .form-control {
+            min-height: 60px;
+        }
+        /*定位用*/
+        
+        .FuZuo {
+            z-index: 2;
+            margin: unset;
+            margin-left: 80px;
+            margin-top: 70px;
+            overflow-y: auto;
+            display: none;
+            min-width: 450px;
+            padding: 1em;
+            color: #666;
+            height: 100vh;
+        }
+        
+        .FuZuo_t {
+            color: #2598C0;
+            text-align: center;
+            border-bottom: #2598C0 1px solid;
+            padding: 0 0 15px;
+            margin-bottom: 15px;
+            position: relative;
+        }
+        
+        .close_btn {
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            z-index: 9;
+            cursor: pointer;
+        }
+        
+        .form-directions {
+            background-color: rgba(0, 0, 0, 0.1);
+            color: #000;
+            font-size: 1.2rem;
+            padding: 10px;
+        }
+        
+        .clear {
+            width: 49%;
+            background: transparent;
+            border: #007387 1px solid;
+            color: #007387;
+            margin-bottom: 15px;
+        }
+        
+        .clear:hover {
+            background: #007387;
+            color: #fff !important;
+            background: linear-gradient(to right, #2598C0 0%, #5DCCE7 100%);
+        }
+        
+        .registration {
+            color: #fff;
+            width: 49%;
+            float: right;
+            outline: #007387 1px solid;
+            background: linear-gradient(to right, #2598C0 0%, #5DCCE7 100%);
+        }
+        
+        .registration:hover {
+            background: #2598C0;
+            color: #fff;
+        }
+        
+        .dark_copy {
+            background-color: rgba(95, 206, 232, 0.2);
+            padding: 10px;
+            color: #007387;
+            position: relative;
+            margin-bottom: 1em;
+        }
+        
+        .copy_btn {
+            width: 40px;
+            height: 100%;
+            background-color: rgba(95, 206, 232, 0.9);
+            position: absolute;
+            right: 0;
+            top: 0;
+            border: none;
+        }
+        
+        .copy_btn:hover {
+            background-color: #077EAD;
+        }
+        
+        .num3 {
+            margin: 15px 0;
+            color: #077EAD;
+        }
+        
+        .num3 .pro_detail_title {
+            display: block;
+            color: #2598C0;
+        }
+        
+        .pro_detail_title h3 {
+            cursor: pointer;
+            display: flex;
+            font-weight: bold;
+            gap: 5px;
+            font-size: 20px;
+        }
+        
+        .pro_detail_title h3::before {
+            content: "＋";
+        }
+        
+        .pro_detail_title.active h3::before {
+            content: "－";
+        }
+        
+        .second_cheack {
+            margin: 10px 25px;
+            display: grid;
+            font-size: 16px;
+            display: none;
+            color: #333;
+            gap: 3px;
+        }
+        
+        .first_cheack {
+            margin: 10px 0;
+            display: grid;
+            font-size: 20px;
+            gap: 5px;
+            color: #2598C0;
+        }
+        
+        .three_cheack {
+            display: inline-flex;
+            font-size: 16px;
+            gap: 15px;
+            color: #2598C0;
+            align-items: center;
+        }
+        
+        .Precautions {
+            margin: 10px 0;
+        }
+        
+        #FuZuo2 {
+            margin: unset;
+            margin-top: 70px;
+            overflow-y: auto;
+            display: none;
+            min-width: 300px;
+            padding: 1em;
+            color: #666;
+            height: 100vh;
+            border-left: #d8d8d8 1px solid;
+        }
+        
+        .download_txt {
+            color: #a00000;
+            font-size: 16px;
+            border: #a00000 1px solid;
+            padding: 3px 15px;
+        }
+        
+        .download_txt:hover {
+            background: #a00000;
+            color: #fff;
+        }
+        /*tab切換*/
+        
+        .tabArea {
+            margin: 20px 0;
+        }
+        
+         :root {
+            --main-color1: #2598C0;
+            --main-color2: linear-gradient(to right, #2598C0 0%, #5DCCE7 100%);
+        }
+        
+        .pr-moretag-sw {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        
+        .pr-moretag-sw a {
+            color: #2598C0;
+            width: calc(25% - 3px);
+            background: transparent;
+            border: 2px solid var(--main-color1);
+            padding: 10px 15px;
+            margin: 0;
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            text-align: center;
+        }
+        
+        .pr-moretag-sw .section {
+            background: var(--main-color2);
+            color: #fff;
+        }
+        
+        .pr-moretag-sw a:hover {
+            background: var(--main-color2);
+            color: #fff;
+        }
+        
+        .standard-light-circle {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            border-radius: 9999px;
+            border: 2px solid #FFF;
+            text-align: center;
+            vertical-align: middle;
+        }
+        
+        .news-info-con3 {
+            display: inline-flex;
+            align-items: center;
+            position: relative;
+            border: 1px solid #d8d8d8;
+            padding: 15px 15px 20px 15px;
+            background: #f5f5f5;
+            border-radius: 10px;
+            margin: 50px 0 20px 0;
+            width: 100%;
+        }
+        
+        .news-info-con4 {
+            display: inline-flex;
+            align-items: center;
+            width: 100%;
+            position: relative;
+            border: 1px solid #d8d8d8;
+            padding: 15px 15px 20px 15px;
+            background: #f5f5f5;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .sl-green img {
+            margin-right: 15px;
+            height: 90px;
+        }
+        
+        .table_color01 {
+            border: #ccc 1px solid;
+        }
+        
+        .info-table-tag .table_color01 th,
+        .info-table-tag .table_color01 td {
+            padding: 5px 10px;
+        }
+        
+        .info-table-tag .table_color01 th {
+            background-color: #666;
+            color: #fff;
+        }
+        
+        .info-table-tag .table_color01 tr:nth-child(odd) {
+            background-color: #eee;
+        }
+        
+        .info-html-tag {
+            padding-top: 20px;
+        }
+        
+        .goal_title_inside {
+            display: flex;
+            align-items: center;
+            color: #666
+        }

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80.997" height="22.457" viewBox="0 0 80.997 22.457">
+  <defs>
+    <linearGradient id="linear-gradient" x1="-3.536" y1="0.5" x2="6.186" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-opacity="0"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="-4.306" x2="5.416" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-3" x1="-5.075" x2="4.647" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-4" x1="-5.844" x2="3.878" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-5" x1="-6.613" x2="3.109" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-6" x1="-7.383" x2="2.339" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-7" x1="-8.152" x2="1.57" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="h2_icon" transform="translate(-436.043 -132.222)">
+    <path id="路径_825" data-name="路径 825" d="M439.239,132.222l-3.2,3.2,8.033,8.033-8.033,8.033,3.2,3.2,11.228-11.228Z" fill="url(#linear-gradient)" style="mix-blend-mode: color-dodge;isolation: isolate"/>
+    <path id="路径_826" data-name="路径 826" d="M450.334,132.222l-3.2,3.2,8.033,8.033-8.033,8.033,3.2,3.2,11.228-11.228Z" fill="url(#linear-gradient-2)" style="mix-blend-mode: color-dodge;isolation: isolate"/>
+    <path id="路径_827" data-name="路径 827" d="M461.43,132.222l-3.2,3.2,8.033,8.033-8.033,8.033,3.2,3.2,11.228-11.228Z" fill="url(#linear-gradient-3)" style="mix-blend-mode: color-dodge;isolation: isolate"/>
+    <path id="路径_828" data-name="路径 828" d="M472.525,132.222l-3.2,3.2,8.033,8.033-8.033,8.033,3.2,3.2,11.228-11.228Z" fill="url(#linear-gradient-4)" style="mix-blend-mode: color-dodge;isolation: isolate"/>
+    <path id="路径_829" data-name="路径 829" d="M483.621,132.222l-3.2,3.2,8.033,8.033-8.033,8.033,3.2,3.2,11.228-11.228Z" fill="url(#linear-gradient-5)" style="mix-blend-mode: color-dodge;isolation: isolate"/>
+    <path id="路径_830" data-name="路径 830" d="M494.716,132.222l-3.2,3.2,8.033,8.033-8.033,8.033,3.2,3.2,11.228-11.228Z" fill="url(#linear-gradient-6)" style="mix-blend-mode: color-dodge;isolation: isolate"/>
+    <path id="路径_831" data-name="路径 831" d="M505.812,132.222l-3.2,3.2,8.033,8.033-8.033,8.033,3.2,3.2L517.04,143.45Z" fill="url(#linear-gradient-7)" style="mix-blend-mode: color-dodge;isolation: isolate"/>
+  </g>
+</svg>
